@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jfc-MF-Wst">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LisztShareKit-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIa-RR-agz">
+                                <color key="backgroundColor" red="0.1806486138" green="0.80460696050000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TAb-uu-Muq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="从中间弹出分享(图文)">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V1t-qd-gGE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPK-BX-lGd">
+                                <color key="backgroundColor" red="0.1806486138" green="0.80460696050000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XjS-Wd-2D8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="从底部弹出分享(图文)">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="faW-M0-tsg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sx1-Kj-VkC">
+                                <color key="backgroundColor" red="0.1806486138" green="0.80460696050000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YFe-Xo-EeF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="只显示标题分享">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xqt-mv-7t8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4N-nB-V0n">
+                                <color key="backgroundColor" red="0.1806486138" green="0.80460696050000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1XZ-Q4-8Jx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="只显示图片分享">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lia-ZX-6z3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NY2-yK-K33">
+                                <color key="backgroundColor" red="0.1806486138" green="0.80460696050000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dYc-N2-mK6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="文字颜色和字体自定义">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jEz-ii-njk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liszt邀请您加入iOS高级研发群:98787555" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZX-bU-Kxg">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gLF-My-qbT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NY2-yK-K33" firstAttribute="top" secondItem="v4N-nB-V0n" secondAttribute="bottom" constant="10" id="CT3-D1-Jp4"/>
+                            <constraint firstItem="v4N-nB-V0n" firstAttribute="top" secondItem="sx1-Kj-VkC" secondAttribute="bottom" constant="10" id="Egg-Lx-YaW"/>
+                            <constraint firstAttribute="trailing" secondItem="OPK-BX-lGd" secondAttribute="trailing" id="Inp-Zh-88d"/>
+                            <constraint firstItem="OPK-BX-lGd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JUy-s9-0BA"/>
+                            <constraint firstAttribute="trailing" secondItem="7ZX-bU-Kxg" secondAttribute="trailing" constant="5" id="KOW-4T-J9L"/>
+                            <constraint firstItem="NY2-yK-K33" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OmX-we-V4Z"/>
+                            <constraint firstItem="sx1-Kj-VkC" firstAttribute="top" secondItem="OPK-BX-lGd" secondAttribute="bottom" constant="10" id="Ps7-wa-H0Z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7ZX-bU-Kxg" secondAttribute="bottom" constant="50" id="QDH-od-Nq7"/>
+                            <constraint firstAttribute="trailing" secondItem="sx1-Kj-VkC" secondAttribute="trailing" id="QtG-Id-Uej"/>
+                            <constraint firstItem="7ZX-bU-Kxg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="Quj-nK-eyd"/>
+                            <constraint firstAttribute="trailing" secondItem="NY2-yK-K33" secondAttribute="trailing" id="V1S-wa-pId"/>
+                            <constraint firstAttribute="trailing" secondItem="aIa-RR-agz" secondAttribute="trailing" id="Yly-PB-jq8"/>
+                            <constraint firstItem="v4N-nB-V0n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aQC-b0-hcP"/>
+                            <constraint firstItem="sx1-Kj-VkC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="exZ-J4-UjW"/>
+                            <constraint firstItem="OPK-BX-lGd" firstAttribute="top" secondItem="aIa-RR-agz" secondAttribute="bottom" constant="10" id="h34-1z-uns"/>
+                            <constraint firstAttribute="trailing" secondItem="v4N-nB-V0n" secondAttribute="trailing" id="n2o-up-Nk2"/>
+                            <constraint firstItem="aIa-RR-agz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pXu-ST-si5"/>
+                            <constraint firstItem="aIa-RR-agz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tVs-af-EMJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="LisztShareKit" id="YUK-vW-4w4"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="7ZX-bU-Kxg" id="1lx-6d-BTj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991.20000000000005" y="-34.632683658170919"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aGN-Uc-BcM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jfc-MF-Wst" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GlV-W8-AMa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ahl-px-x08"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0U4-Gp-7B6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-342" y="-35"/>
+        </scene>
+    </scenes>
+</document>
